@@ -37,7 +37,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ id }) => {
       id={id}
       className={cn(
         'min-h-screen flex flex-col items-center justify-center relative',
-        'bg-brand-secondary text-neutral-dark-grey p-8 pt-20 md:pt-24 text-center overflow-hidden'
+        'bg-feedback-success-bg text-neutral-dark-grey p-8 pt-20 md:pt-24 text-center overflow-hidden'
       )}
       variants={containerVariants}
       initial="hidden"
