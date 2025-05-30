@@ -37,7 +37,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ id }) => {
       id={id}
       className={cn(
         'min-h-screen flex flex-col items-center justify-center relative',
-        'bg-secondary text-neutral-dark p-8 pt-20 md:pt-24 text-center overflow-hidden'
+        'bg-brand-secondary text-neutral-dark-grey p-8 pt-20 md:pt-24 text-center overflow-hidden'
       )}
       variants={containerVariants}
       initial="hidden"
@@ -50,7 +50,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ id }) => {
       <motion.h1
         className={cn(
           'font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl',
-          'leading-tight tracking-tight text-neutral-dark mb-4 md:mb-6'
+          'leading-tight tracking-tight text-neutral-dark-grey mb-4 md:mb-6'
         )}
         variants={itemVariants}
       >
@@ -60,7 +60,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ id }) => {
       {/* Subtext */}
       <motion.p
         className={cn(
-          'font-sans text-lg sm:text-xl md:text-2xl text-neutral-dark opacity-90',
+          'font-sans text-lg sm:text-xl md:text-2xl text-neutral-dark-grey opacity-90',
           'max-w-xl md:max-w-2xl mx-auto'
         )}
         variants={itemVariants}
@@ -68,8 +68,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ id }) => {
         Designs that whisper loud stories.
       </motion.p>
 
-      {/* Scroll Down Indicator */}
-      <ScrollIndicator targetId="story-section" /> {/* Assuming next section id is 'story-section'*/}
+      {/* Scroll Down Indicator - targets the 'story' section */}
+      <ScrollIndicator targetId="story" />
     </motion.section>
   );
 };

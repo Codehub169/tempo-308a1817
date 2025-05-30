@@ -19,8 +19,12 @@ module.exports = {
         },
         feedback: {
           success: '#4CAF50',
+          'success-content': '#1B5E20', // Darker green for text on light success bg
+          'success-bg': '#E8F5E9',    // Light green background for success messages
           warning: '#FFC107',
           error: '#F44336',
+          'error-content': '#B71C1C',  // Darker red for text on light error bg
+          'error-bg': '#FFEBEE',     // Light red background for error messages
         }
       },
       fontFamily: {
