@@ -35,9 +35,9 @@ echo "
 --- Installing project dependencies ---"
 echo "This might take a few minutes...
 "
-# Using npm ci for a clean, reproducible install from package-lock.json
-# If package-lock.json is not present or you prefer standard install, use 'npm install'
-npm ci
+# Using npm install to generate package-lock.json if it doesn't exist or to install dependencies.
+# This is more robust if a package-lock.json is not guaranteed to be present.
+npm install
 
 echo "
 --- Project dependencies installed successfully ---"
