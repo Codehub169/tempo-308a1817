@@ -64,17 +64,17 @@ const StorySection: React.FC<StorySectionProps> = ({ id }) => {
       ref={sectionRef}
       className={cn(
         'min-h-screen flex flex-col items-center justify-center relative',
-        'bg-primary text-secondary px-8 py-16 md:py-24 overflow-hidden'
+        'bg-brand-primary text-brand-secondary px-8 py-16 md:py-24 overflow-hidden'
       )}
       initial="hidden"
       animate={sectionInView ? 'visible' : 'hidden'}
     >
       <motion.div 
-        className="max-w-3xl mx-auto text-center space-y-8 md:space-y-12"
+        className="max-w-3xl w-full text-center md:text-left space-y-8 md:space-y-12"
         variants={{ visible: { transition: { staggerChildren: 0.3 } } }} // Stagger children of this container
       >
         <motion.h2 
-          className="font-display text-4xl md:text-5xl lg:text-6xl text-secondary tracking-tight"
+          className="font-display text-4xl md:text-5xl lg:text-6xl text-brand-secondary tracking-tight"
           variants={textVariants}
         >
           The hueneu Story
@@ -84,7 +84,7 @@ const StorySection: React.FC<StorySectionProps> = ({ id }) => {
           className="font-sans text-lg md:text-xl lg:text-2xl leading-relaxed opacity-90"
           variants={textVariants}
         >
-          At hueneu, we believe in the quiet power of thoughtful design. <strong className='text-accent font-semibold'>Hue</strong> represents the vibrant bursts of creativity, the unexpected color that tells a story. <strong className='font-semibold'>Neu</strong> signifies the calm, the grounding neutrality that provides balance and clarity. It's where bold ideas meet intentional execution.
+          At hueneu, we believe in the quiet power of thoughtful design. <strong className='text-brand-accent font-semibold'>Hue</strong> represents the vibrant bursts of creativity, the unexpected color that tells a story. <strong className='font-semibold'>Neu</strong> signifies the calm, the grounding neutrality that provides balance and clarity. It's where bold ideas meet intentional execution.
         </motion.p>
         
         <motion.p 
@@ -97,17 +97,17 @@ const StorySection: React.FC<StorySectionProps> = ({ id }) => {
         {/* "Who Knew?" Moment */}
         <motion.div
           ref={whoKnewRef}
-          className="mt-12 md:mt-16 py-8 md:py-10 relative inline-block"
+          className="mt-12 md:mt-16 py-8 md:py-10 relative block mx-auto text-center"
           variants={whoKnewContainerVariants}
           initial="hidden"
           animate={whoKnewInView ? 'visible' : 'hidden'}
         >
           <motion.div 
-            className="absolute inset-0 bg-accent rounded-md transform origin-left z-0"
+            className="absolute inset-0 bg-brand-accent rounded-md transform origin-left z-0"
             variants={whoKnewBackgroundVariants}
           />
           <motion.h3 
-            className="relative z-10 font-display text-3xl md:text-4xl lg:text-5xl text-secondary px-6 py-2 inline-flex items-center"
+            className="relative z-10 font-display text-3xl md:text-4xl lg:text-5xl text-brand-secondary px-6 py-2 inline-flex items-center"
             variants={whoKnewTextVariants}
           >
             Who Knew?
