@@ -1,0 +1,14 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .font-raleway {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600; /* Semi-bold for Raleway */
+    }
+  </style>
+  <text x="10" y="40" class="font-raleway" font-size="32" fill="#FF6B6B" id="logo-hue">hue</text>
+  <text x="88" y="40" class="font-raleway" font-size="32" fill="#5A6B7C" id="logo-neu">neu</text>
+  <circle cx="168" cy="20" r="8" fill="#FF6B6B" id="logo-circle"/>
+  <!-- Note: The AnimatedLogo.tsx component will replicate this visual style and animate its parts. -->
+  <!-- This SVG serves as a static asset and visual reference. -->
+  <!-- Ensure Raleway font is loaded in the project for consistent rendering if this SVG is used directly. -->
+</svg>
